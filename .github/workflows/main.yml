@@ -14,7 +14,7 @@ jobs:
           ref: master
 
       - name: Generate Directory Listings
-        uses: mxzel/pdfs
+        uses: mxzel/pdfs@master
         # with:
         #   FOLDER: data
 
