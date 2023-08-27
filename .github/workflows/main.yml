@@ -14,15 +14,15 @@ jobs:
           ref: master
 
       - name: Generate Directory Listings
-        uses: jayanta525/github-pages-directory-listing@main
-        with:
-          FOLDER: data
+        uses: mxzel/pdfs
+        # with:
+        #   FOLDER: data
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
-        with:
-          # Upload generator folder
-          path: 'data'
+        # with:
+        #   # Upload generator folder
+        #   path: 'data'
 
   deploy:
     needs: pages-directory-listing
